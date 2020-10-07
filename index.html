@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BLACKJACK GAME</title>
+  <link rel="stylesheet" href="static/css/bootstrap.css">
+  <link rel="stylesheet" href="static/css/style.css">
+</head>
+<body>
+  <br>
+  <!-- Main Container -->
+  <div class="container-1">
+    <h2>BLACKJACK GAME</h2>
+    <h5>Play against <a href="#friendlink">your friend</a> OR <a href="#botlink">The Bot</a>. <br><a href="/rules.html">Rules</a></h5>
+    <h3><span id="blackjack-result">Let's Play</span></h3>
+
+    <!-- First Row -->
+    <div class="flex-blackjack-row-1">
+
+      <div class="firstPlayer-box" id="firstPlayer-box">
+        <h2>You: <span id="firstPlayer-blackjack-result">0</span></h2>
+      </div>
+
+      <div class="secondPlayer-box" id="secondPlayer-box">
+        <h2>You: <span id="secondPlayer-blackjack-result">0</span></h2>
+      </div>
+
+    </div>
+
+    <!-- Second Row -->
+    <div class="flex-blackjack-row-2">
+
+      <div>
+        <button class="btn-lg btn-primary mr-2" id="bj-hit-btn">Hit</button>
+        <button class="btn-lg btn-warning mr-2" id="bj-stand-btn">Stand</button>
+        <button class="btn-lg btn-danger mr-2" id="bj-deal-btn">Deal</button>
+      </div>
+
+    </div>
+
+    <!-- Third Row -->
+    <div class="flex-blackjack-row-3">
+
+      <table>
+        <tr>
+          <th>Wins</th>
+          <th>Draws</th>
+          <th>Losses</th>
+        </tr>
+        <tr>
+          <td><span id="wins">0</span></td>
+          <td><span id="draws">0</span></td>
+          <td><span id="losses">0</span></td>
+        </tr>
+      </table>
+
+    </div>
+
+
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
